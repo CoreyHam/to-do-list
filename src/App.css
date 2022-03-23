@@ -25,6 +25,9 @@ html, .app{
   height: 100px;
   font-size: 50px;
 }
+.todo{
+  text-align: center;
+}
 button{
   background-color: #ee0000 !important;
   border: none;
