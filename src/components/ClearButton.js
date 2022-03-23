@@ -1,8 +1,9 @@
 import React from 'react'
+import {Button} from 'react-bootstrap'
 
 const ClearButton = () => {
   return (
-    <div>ClearButton</div>
+    <Button>Clear Completed</Button>
   )
 }
 

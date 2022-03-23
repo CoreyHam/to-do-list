@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Display = () => {
+const Display = ({ children }) => {
   return (
-    <div>Display</div>
+    <div className='display'>{children}</div>
   )
 }
 

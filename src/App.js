@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import ClearButton from './components/ClearButton';
 import Display from './components/Display';
@@ -8,11 +9,16 @@ import Todos from './components/Todos';
 export default function App() {
   return (
     <div className="app">
-      <Display />
-      <Input />
-      <Todos />
-      <FilterButtons />
-      <ClearButton />
+      <div className='title'>todos</div>
+      <Display>
+        <Input />
+        <Todos />
+        <div className='bottom-div'>
+          <h3>items left</h3>
+          <FilterButtons />
+          <ClearButton />
+        </div>
+      </Display>
     </div>
   );
 }
