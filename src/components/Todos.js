@@ -1,17 +1,18 @@
 import React from 'react'
 
-const Todos = () => {
+const Todos = ({ todos }) => {
   return (
-    <>
-    <Todo status={[]} label={''} id={[]} /> {/* I need to get the label from the input somehow */}
-    </>
+    todos.map((todo, i)=>{
+      return <Todo status={'active'} todo={todo} />
+    })
   )
 }
 
-const Todo = ({status, label, id}) => {
+const Todo = ({ todo, status, label, id }) => {
   return (
     <>
-    <div className='todo'>{label}</div>
+      <div className='todo'>
+        <button><i class="bi bi-circle"></i></button>{todo}<button></button></div>
     </>
   )
 }
